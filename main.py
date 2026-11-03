@@ -2,7 +2,7 @@ import sys
 
 basisprijs = 7500
 prijs = 7500
-attr_namen = ["merk", "model", "motor", "kleur", "accessoires", "uitvoering"]
+attr_namen = ["model", "motor", "kleur", "uitvoering", "merk", "accessoires"]
 attr_prijs = []
 
 # maak dictionaries met de naam van het attribuut samen met de prijs
@@ -138,7 +138,7 @@ if creeer in ("ja", "j"):
 
     for i, j in attr_acc.items():
         print(" -" + i.capitalize(), f"\n    Prijs: €{j}")
-    acc = input("Welke uitvoering wilt u hebben: ").lower()
+    acc = input("Welke accessoire wilt u hebben: ").lower()
 
     prijs += attr_acc.get(acc)
 
