@@ -69,6 +69,8 @@ print()
 
 creeer = input("Wilt u een nieuwe auto samenstellen (ja/nee): ").lower()
 
+# TODO DELING 1
+
 if creeer in ("ja", "j"):
 
     print("\n\nMerken: ")
@@ -161,6 +163,8 @@ if creeer in ("ja", "j"):
     # voeg de prijs van de uitvoering toe aan de lijst attr_prijs
     attr_prijs.append(attr_uitvoering.get(uitvoering))
 
+# TODO DELING 2
+
     # opent de file autos.txt en indien hij niet bestaat maakt hij het bestand aan
     attr_waardes = [merk, model, motor, kleur, acc, uitvoering]
     with open("autos.txt", "a") as file:
@@ -201,6 +205,8 @@ if creeer in ("ja", "j"):
         print(f" -{i.capitalize()}: ", j.title(), "   +€" + str(k), sep="")
     print(f"\nPrijs: {prijs}")
     print("\n")
+
+# TODO DELING 3
 
 # als de gebruiker geen nieuwe auto wilt maken
 elif creeer in ("nee", "n"):
