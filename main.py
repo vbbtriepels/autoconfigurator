@@ -77,7 +77,7 @@ if creeer in ("ja", "j"):
 
     for i, j in attr_merk.items():
         print(" -" + i.title(), f"\n    Prijs: €{j}")
-    merk = input("Welk model wilt u hebben: ").lower()
+    merk = input("Welk merk wilt u hebben: ").lower()
 
     prijs += attr_merk.get(merk)
 
